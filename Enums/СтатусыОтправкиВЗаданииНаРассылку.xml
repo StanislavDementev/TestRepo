@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	<Enum uuid="3b460f34-c4c8-4255-a89e-92128d7d31fb">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыОтправкиВЗаданииНаРассылку" category="Ref">
+				<xr:TypeId>3ae0838f-0a05-4ff0-a5dc-2aaca9222f80</xr:TypeId>
+				<xr:ValueId>0362e8fa-5f5e-484b-8c37-b8ea8f0106c7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыОтправкиВЗаданииНаРассылку" category="Manager">
+				<xr:TypeId>3271e71f-404e-49c6-b34c-2988530b8734</xr:TypeId>
+				<xr:ValueId>bc179aea-fb13-4aa6-b45c-700096e1944a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыОтправкиВЗаданииНаРассылку" category="List">
+				<xr:TypeId>6fb62f3c-1249-4060-b92a-032273374e24</xr:TypeId>
+				<xr:ValueId>2653ea08-7d59-421a-a9a4-b1ca8dc04790</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатусыОтправкиВЗаданииНаРассылку</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы отправки в задании на рассылку</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="68af81b0-da29-4f78-a6fe-aef673d78881">
+				<Properties>
+					<Name>ВОбработке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>К отправке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>В очереди на отправку</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0bc39145-ddd2-46a1-b36b-8776ff107687">
+				<Properties>
+					<Name>Отправлен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправлен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Отправлен</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="73426f3c-0a64-48ce-8dcd-20428ee484f8">
+				<Properties>
+					<Name>НеУдачнаяОтправка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не удачная отправка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Не удачная отправка</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="564d8404-fa10-4b30-81bd-b53b562c5d7a">
+				<Properties>
+					<Name>Отмена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Отмена</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="807100f5-e632-4994-8c89-966925c83e97">
+				<Properties>
+					<Name>Обрабатывается</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обрабатывается</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Обрабатывается</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a3f20b8c-217e-4f1e-af04-3e72e54a4297">
+				<Properties>
+					<Name>Обработано</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработано</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

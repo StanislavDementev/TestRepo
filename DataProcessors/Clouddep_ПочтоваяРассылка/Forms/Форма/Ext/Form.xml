@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	<Width>100</Width>
+	<Height>25</Height>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ОсновнаяПанель" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная панель</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ОсновнаяПанельРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ГруппыРассылки" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы рассылки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы рассылки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппыРассылкиРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Table name="ГруппыРассылкиСписок" id="56">
+							<Width>20</Width>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ГруппыРассылки</DataPath>
+							<RowPictureDataPath>ГруппыРассылки.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ГруппыРассылкиСписокКонтекстноеМеню" id="57"/>
+							<AutoCommandBar name="ГруппыРассылкиСписокКоманднаяПанель" id="58"/>
+							<ExtendedTooltip name="ГруппыРассылкиСписокРасширеннаяПодсказка" id="59"/>
+							<SearchStringAddition name="ГруппыРассылкиСписокСтрокаПоиска" id="60">
+								<Source>
+									<lf:elementId>56</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="ГруппыРассылкиСписокСтрокаПоискаКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="ГруппыРассылкиСписокСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ГруппыРассылкиСписокСостояниеПросмотра" id="63">
+								<Source>
+									<lf:elementId>56</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="ГруппыРассылкиСписокСостояниеПросмотраКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="ГруппыРассылкиСписокСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ГруппыРассылкиСписокУправлениеПоиском" id="66">
+								<Source>
+									<lf:elementId>56</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="ГруппыРассылкиСписокУправлениеПоискомКонтекстноеМеню" id="67"/>
+								<ExtendedTooltip name="ГруппыРассылкиСписокУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ГруппыРассылкиСписокПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ГруппыРассылкиСписокКод" id="69">
+									<DataPath>ГруппыРассылки.Code</DataPath>
+									<Width>8</Width>
+									<ContextMenu name="ГруппыРассылкиСписокКодКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ГруппыРассылкиСписокКодРасширеннаяПодсказка" id="71"/>
+								</LabelField>
+								<LabelField name="ГруппыРассылкиСписокНаименование" id="72">
+									<DataPath>ГруппыРассылки.Description</DataPath>
+									<ContextMenu name="ГруппыРассылкиСписокНаименованиеКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ГруппыРассылкиСписокНаименованиеРасширеннаяПодсказка" id="74"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="Группа1" id="116">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="117"/>
+							<ChildItems>
+								<Table name="СоставГруппыРассылки" id="75">
+									<Height>1</Height>
+									<Header>false</Header>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>СоставГруппыРассылки</DataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="СоставГруппыРассылкиКонтекстноеМеню" id="76"/>
+									<AutoCommandBar name="СоставГруппыРассылкиКоманднаяПанель" id="77"/>
+									<ExtendedTooltip name="СоставГруппыРассылкиРасширеннаяПодсказка" id="78"/>
+									<SearchStringAddition name="СоставГруппыРассылкиСтрокаПоиска" id="79">
+										<Source>
+											<lf:elementId>75</lf:elementId>
+											<lf:additionId>0</lf:additionId>
+										</Source>
+										<ContextMenu name="СоставГруппыРассылкиСтрокаПоискаКонтекстноеМеню" id="80"/>
+										<ExtendedTooltip name="СоставГруппыРассылкиСтрокаПоискаРасширеннаяПодсказка" id="81"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СоставГруппыРассылкиСостояниеПросмотра" id="82">
+										<Source>
+											<lf:elementId>75</lf:elementId>
+											<lf:additionId>1</lf:additionId>
+										</Source>
+										<ContextMenu name="СоставГруппыРассылкиСостояниеПросмотраКонтекстноеМеню" id="83"/>
+										<ExtendedTooltip name="СоставГруппыРассылкиСостояниеПросмотраРасширеннаяПодсказка" id="84"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СоставГруппыРассылкиУправлениеПоиском" id="85">
+										<Source>
+											<lf:elementId>75</lf:elementId>
+											<lf:additionId>2</lf:additionId>
+										</Source>
+										<ContextMenu name="СоставГруппыРассылкиУправлениеПоискомКонтекстноеМеню" id="86"/>
+										<ExtendedTooltip name="СоставГруппыРассылкиУправлениеПоискомРасширеннаяПодсказка" id="87"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="СоставГруппыРассылкиОбъектРассылки" id="91">
+											<DataPath>СоставГруппыРассылки.ОбъектРассылки</DataPath>
+											<ShowInHeader>false</ShowInHeader>
+											<ShowInFooter>false</ShowInFooter>
+											<Height>1</Height>
+											<ContextMenu name="СоставГруппыРассылкиОбъектРассылкиКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="СоставГруппыРассылкиОбъектРассылкиРасширеннаяПодсказка" id="93"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+								<Table name="НастройкиАвтозаполненияСоставаГруппРассылки" id="94">
+									<Height>1</Height>
+									<Header>false</Header>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>НастройкиАвтозаполненияСоставаГруппРассылки</DataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="НастройкиАвтозаполненияСоставаГруппРассылкиКонтекстноеМеню" id="95"/>
+									<AutoCommandBar name="НастройкиАвтозаполненияСоставаГруппРассылкиКоманднаяПанель" id="96">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="НастройкиАвтозаполненияСоставаГруппРассылкиСоздать" id="118">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.НастройкиАвтозаполненияСоставаГруппРассылки.StandardCommand.Create</CommandName>
+												<Parameter xsi:nil="true"/>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Добавить настройку</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиСоздатьРасширеннаяПодсказка" id="119"/>
+											</Button>
+											<Button name="НастройкиАвтозаполненияСоставаГруппРассылкиУдалить" id="120">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.НастройкиАвтозаполненияСоставаГруппРассылки.StandardCommand.Delete</CommandName>
+												<Parameter xsi:nil="true"/>
+												<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиУдалитьРасширеннаяПодсказка" id="121"/>
+											</Button>
+											<Popup name="НастройкиАвтозаполненияСоставаГруппРассылкиГруппа1" id="126">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Контакты</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиГруппа1РасширеннаяПодсказка" id="127"/>
+												<ChildItems>
+													<Button name="НастройкиАвтозаполненияСоставаГруппРассылкиПоказатьКонтактыПоТекущейНастройке" id="122">
+														<Type>CommandBarButton</Type>
+														<OnlyInAllActions>true</OnlyInAllActions>
+														<CommandName>Form.Command.ПоказатьКонтактыПоТекущейНастройке</CommandName>
+														<Parameter xsi:nil="true"/>
+														<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиПоказатьКонтактыПоТекущейНастройкеРасширеннаяПодсказка" id="123"/>
+													</Button>
+													<Button name="НастройкиАвтозаполненияСоставаГруппРассылкиПоказатьКонтактыПоВсемНастройкам" id="124">
+														<Type>CommandBarButton</Type>
+														<OnlyInAllActions>true</OnlyInAllActions>
+														<CommandName>Form.Command.ПоказатьКонтактыПоВсемНастройкам</CommandName>
+														<Parameter xsi:nil="true"/>
+														<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиПоказатьКонтактыПоВсемНастройкамРасширеннаяПодсказка" id="125"/>
+													</Button>
+												</ChildItems>
+											</Popup>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиРасширеннаяПодсказка" id="97"/>
+									<SearchStringAddition name="НастройкиАвтозаполненияСоставаГруппРассылкиСтрокаПоиска" id="98">
+										<Source>
+											<lf:elementId>94</lf:elementId>
+											<lf:additionId>0</lf:additionId>
+										</Source>
+										<ContextMenu name="НастройкиАвтозаполненияСоставаГруппРассылкиСтрокаПоискаКонтекстноеМеню" id="99"/>
+										<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиСтрокаПоискаРасширеннаяПодсказка" id="100"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="НастройкиАвтозаполненияСоставаГруппРассылкиСостояниеПросмотра" id="101">
+										<Source>
+											<lf:elementId>94</lf:elementId>
+											<lf:additionId>1</lf:additionId>
+										</Source>
+										<ContextMenu name="НастройкиАвтозаполненияСоставаГруппРассылкиСостояниеПросмотраКонтекстноеМеню" id="102"/>
+										<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиСостояниеПросмотраРасширеннаяПодсказка" id="103"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="НастройкиАвтозаполненияСоставаГруппРассылкиУправлениеПоиском" id="104">
+										<Source>
+											<lf:elementId>94</lf:elementId>
+											<lf:additionId>2</lf:additionId>
+										</Source>
+										<ContextMenu name="НастройкиАвтозаполненияСоставаГруппРассылкиУправлениеПоискомКонтекстноеМеню" id="105"/>
+										<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиУправлениеПоискомРасширеннаяПодсказка" id="106"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">НастройкиАвтозаполненияСоставаГруппРассылкиПередНачаломДобавления</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="НастройкиАвтозаполненияСоставаГруппРассылкиОписание" id="113">
+											<DataPath>НастройкиАвтозаполненияСоставаГруппРассылки.Описание</DataPath>
+											<ContextMenu name="НастройкиАвтозаполненияСоставаГруппРассылкиОписаниеКонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="НастройкиАвтозаполненияСоставаГруппРассылкиОписаниеРасширеннаяПодсказка" id="115"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПисьма" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Письма</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа письма</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПисьмаРасширеннаяПодсказка" id="4"/>
+				</Page>
+				<Page name="НастройкаПрофилей" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка профилей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка профилей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="НастройкаПрофилейРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<Table name="ПользователиУчетныхЗаписей" id="7">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Width>20</Width>
+							<Header>false</Header>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ПользователиУчетныхЗаписей</DataPath>
+							<RowPictureDataPath>ПользователиУчетныхЗаписей.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ПользователиУчетныхЗаписейКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="ПользователиУчетныхЗаписейКоманднаяПанель" id="9">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПользователиУчетныхЗаписейРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="ПользователиУчетныхЗаписейСтрокаПоиска" id="11">
+								<Source>
+									<lf:elementId>7</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="ПользователиУчетныхЗаписейСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ПользователиУчетныхЗаписейСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПользователиУчетныхЗаписейСостояниеПросмотра" id="14">
+								<Source>
+									<lf:elementId>7</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="ПользователиУчетныхЗаписейСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ПользователиУчетныхЗаписейСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПользователиУчетныхЗаписейУправлениеПоиском" id="17">
+								<Source>
+									<lf:elementId>7</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="ПользователиУчетныхЗаписейУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ПользователиУчетныхЗаписейУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ПользователиУчетныхЗаписейПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПользователиУчетныхЗаписейПользователь" id="20">
+									<DataPath>ПользователиУчетныхЗаписей.Пользователь</DataPath>
+									<ContextMenu name="ПользователиУчетныхЗаписейПользовательКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ПользователиУчетныхЗаписейПользовательРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<Table name="УчетныеЗаписи" id="23">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>УчетныеЗаписи</DataPath>
+							<RowPictureDataPath>УчетныеЗаписи.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="УчетныеЗаписиКонтекстноеМеню" id="24"/>
+							<AutoCommandBar name="УчетныеЗаписиКоманднаяПанель" id="25"/>
+							<ExtendedTooltip name="УчетныеЗаписиРасширеннаяПодсказка" id="26"/>
+							<SearchStringAddition name="УчетныеЗаписиСтрокаПоиска" id="27">
+								<Source>
+									<lf:elementId>23</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="УчетныеЗаписиСтрокаПоискаКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="УчетныеЗаписиСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УчетныеЗаписиСостояниеПросмотра" id="30">
+								<Source>
+									<lf:elementId>23</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="УчетныеЗаписиСостояниеПросмотраКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="УчетныеЗаписиСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УчетныеЗаписиУправлениеПоиском" id="33">
+								<Source>
+									<lf:elementId>23</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="УчетныеЗаписиУправлениеПоискомКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="УчетныеЗаписиУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="УчетныеЗаписиСтандартнаяКартинка" id="51">
+									<DataPath>УчетныеЗаписи.DefaultPicture</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<ShowInFooter>false</ShowInFooter>
+									<ContextMenu name="УчетныеЗаписиСтандартнаяКартинкаКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="УчетныеЗаписиСтандартнаяКартинкаРасширеннаяПодсказка" id="53"/>
+								</LabelField>
+								<LabelField name="УчетныеЗаписиКод" id="36">
+									<DataPath>УчетныеЗаписи.Code</DataPath>
+									<ContextMenu name="УчетныеЗаписиКодКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="УчетныеЗаписиКодРасширеннаяПодсказка" id="38"/>
+								</LabelField>
+								<LabelField name="УчетныеЗаписиНаименование" id="45">
+									<DataPath>УчетныеЗаписи.Description</DataPath>
+									<ContextMenu name="УчетныеЗаписиНаименованиеКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="УчетныеЗаписиНаименованиеРасширеннаяПодсказка" id="47"/>
+								</LabelField>
+								<LabelField name="УчетныеЗаписиСсылка" id="48">
+									<DataPath>УчетныеЗаписи.Ref</DataPath>
+									<ContextMenu name="УчетныеЗаписиСсылкаКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="УчетныеЗаписиСсылкаРасширеннаяПодсказка" id="50"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Clouddep_ПочтоваяРассылка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПользователиУчетныхЗаписей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи учетных записей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	"&lt;&lt;Все учетные записи&gt;&gt;" КАК Пользователь
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	УчетныеЗаписиЭлектроннойПочтыДоступКУчетнойЗаписи.Пользователь
+ИЗ
+	Справочник.УчетныеЗаписиЭлектроннойПочты.ДоступКУчетнойЗаписи КАК УчетныеЗаписиЭлектроннойПочтыДоступКУчетнойЗаписи
+
+УПОРЯДОЧИТЬ ПО
+	Пользователь</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="УчетныеЗаписи" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетные записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	УчетныеЗаписиЭлектроннойПочты.Ссылка,
+	УчетныеЗаписиЭлектроннойПочты.Код,
+	УчетныеЗаписиЭлектроннойПочты.Наименование,
+	УчетныеЗаписиЭлектроннойПочты.ВерсияДанных,
+	УчетныеЗаписиЭлектроннойПочты.ПометкаУдаления
+ИЗ
+	Справочник.УчетныеЗаписиЭлектроннойПочты КАК УчетныеЗаписиЭлектроннойПочты
+ГДЕ
+	(УчетныеЗаписиЭлектроннойПочты.ДоступКУчетнойЗаписи.Пользователь = &amp;Пользователь
+			ИЛИ &amp;ПоВсемПользователям)</QueryText>
+				<MainTable>Catalog.УчетныеЗаписиЭлектроннойПочты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ГруппыРассылки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы рассылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ГруппыПочтовойРассылки.Ссылка,
+	ГруппыПочтовойРассылки.Код,
+	ГруппыПочтовойРассылки.Наименование
+ИЗ
+	Справочник.ГруппыПочтовойРассылки КАК ГруппыПочтовойРассылки</QueryText>
+				<MainTable>Catalog.ГруппыПочтовойРассылки</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СоставГруппыРассылки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состав группы рассылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.СоставГруппРассылкиЭлектроннойПочты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="НастройкиАвтозаполненияСоставаГруппРассылки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки автозаполнения состава групп рассылки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.Clouddep_НастройкиАвтозаполненияСоставаГруппыПочтовойРассылки</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьКонтактыПоТекущейНастройке" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать контакты по текущей настройке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать контакты по текущей настройке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьКонтактыПоТекущейНастройке</Action>
+		</Command>
+		<Command name="ПоказатьКонтактыПоВсемНастройкам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать контакты по всем настройкам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать контакты по всем настройкам</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	<Width>500</Width>
+	<Height>18</Height>
+	<AutoTitle>false</AutoTitle>
+	<Group>Horizontal</Group>
+	<HorizontalSpacing>Half</HorizontalSpacing>
+	<VerticalSpacing>Half</VerticalSpacing>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Подсистемы" id="1">
+			<Representation>Tree</Representation>
+			<Width>5</Width>
+			<Header>false</Header>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Подсистемы</DataPath>
+			<ContextMenu name="ПодсистемыКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ПодсистемыКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПодсистемыРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ПодсистемыСтрокаПоиска" id="5">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ПодсистемыСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ПодсистемыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПодсистемыСостояниеПросмотра" id="8">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ПодсистемыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ПодсистемыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПодсистемыУправлениеПоиском" id="11">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ПодсистемыУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПодсистемыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<PictureField name="ПодсистемыКартинка" id="24">
+					<DataPath>Подсистемы.Картинка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>2</Width>
+					<ContextMenu name="ПодсистемыКартинкаКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ПодсистемыКартинкаРасширеннаяПодсказка" id="26"/>
+				</PictureField>
+				<InputField name="ПодсистемыИмяПодсистемы" id="14">
+					<DataPath>Подсистемы.ИмяПодсистемы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Height>2</Height>
+					<ContextMenu name="ПодсистемыИмяПодсистемыКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПодсистемыИмяПодсистемыРасширеннаяПодсказка" id="16"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Pages name="ЗакладкиПодсистем" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки подсистем</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки подсистем</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>60</Width>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ЗакладкиПодсистемРасширеннаяПодсказка" id="18"/>
+			<ChildItems>
+				<Page name="СтраницаРабочегоСтола" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница рабочего стола</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница рабочего стола</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаРабочегоСтолаРасширеннаяПодсказка" id="20"/>
+					<ChildItems>
+						<GraphicalSchemaField name="ПолеРабочегоСтола" id="21">
+							<DataPath>ПолеРабочегоСтола</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<Edit>false</Edit>
+							<ContextMenu name="ПолеРабочегоСтолаКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ПолеРабочегоСтолаРасширеннаяПодсказка" id="23"/>
+							<Events>
+								<Event name="Selection">ПолеРабочегоСтолаВыбор</Event>
+								<Event name="OnActivate">ПолеРабочегоСтолаПриАктивизации</Event>
+							</Events>
+						</GraphicalSchemaField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочийСтолClouddep</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Подсистемы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсистемы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяПодсистемы" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя подсистемы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПолеРабочегоСтола" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле рабочего стола</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/graphscheme">d5p1:FlowchartContextType</v8:Type>
+			</Type>
+			<Settings xmlns:d4p1="http://v8.1c.ru/8.2/data/graphscheme" xsi:type="d4p1:FlowchartContextType">
+				<d4p1:backColor>style:FieldBackColor</d4p1:backColor>
+				<d4p1:enableGrid>true</d4p1:enableGrid>
+				<d4p1:drawGridMode>None</d4p1:drawGridMode>
+				<d4p1:gridHorizontalStep>20</d4p1:gridHorizontalStep>
+				<d4p1:gridVerticalStep>20</d4p1:gridVerticalStep>
+				<d4p1:bpUUID>00000000-0000-0000-0000-000000000000</d4p1:bpUUID>
+				<d4p1:useOutput>Auto</d4p1:useOutput>
+				<d4p1:printPropItem>
+					<d4p1:key>6</d4p1:key>
+					<d4p1:val>10</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>7</d4p1:key>
+					<d4p1:val>10</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>8</d4p1:key>
+					<d4p1:val>10</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>9</d4p1:key>
+					<d4p1:val>10</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>13</d4p1:key>
+					<d4p1:val>0</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>16</d4p1:key>
+					<d4p1:val>0</d4p1:val>
+				</d4p1:printPropItem>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection/>
+				<dcsset:filter/>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Lavender</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Команда1" id="1"/>
+		<Command name="Команда2" id="2"/>
+		<Command name="Команда3" id="3"/>
+		<Command name="Команда4" id="4"/>
+		<Command name="Команда5" id="5"/>
+		<Command name="Команда6" id="6"/>
+		<Command name="Команда7" id="7"/>
+		<Command name="Команда8" id="8"/>
+		<Command name="Команда9" id="9"/>
+		<Command name="Команда10" id="10"/>
+		<Command name="Команда11" id="11"/>
+		<Command name="Команда12" id="12"/>
+		<Command name="Команда13" id="13"/>
+		<Command name="Команда14" id="14"/>
+		<Command name="Команда15" id="15"/>
+	</Commands>
+</Form>
